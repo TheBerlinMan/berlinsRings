@@ -3,18 +3,19 @@ html, body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   
 }
 
 .item{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .item img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .item ul{
