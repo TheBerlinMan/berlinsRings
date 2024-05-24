@@ -1,0 +1,1 @@
+SPA to host ring inventory.
