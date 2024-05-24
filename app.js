@@ -1,22 +1,24 @@
+import rings from "./data.js";
 
-import rings from './data.js'
-
-
-rings.map(ring =>{
+rings.map((ring) => {
   console.log(ring.size);
-})
+});
 
-const container = document.getElementById('item-container');
+const container = document.getElementById("item-container");
 
-container.innerHTML = rings.map(ring => `
+container.innerHTML = rings
+  .map(
+    (ring) => `
         <div class="item">
-            <img src="${ring.image}" alt="${ring.title}">
+            <img src="${ring.src}" alt="${ring.Title}">
             <ul>
-                <li>Title: ${ring.title}</li>
-                <li>Designer: ${ring.designer}</li>
-                <li>Size: ${ring.size}</li>
-                <li>Price: ${ring.price}</li>
+              <li>Designer: ${ring.Designer}</li>
+              <li>Size: ${ring.RingSize}</li>
+              <li>Metal Type: ${ring.Metal}</li>
+              <li>Stone Type: ${ring.Stone}</li>
+              <li>Price: $${ring.SalePrice}</li>
             </ul>
         </div>
-    `).join('')
-
+    `
+  )
+  .join("");
